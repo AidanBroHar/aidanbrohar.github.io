@@ -9,20 +9,17 @@
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
+  <!-- Light/Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <button id="theme-btn">🌙</button>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
     <div class="container">
       <h1>Aidan Broomfield-Harris</h1>
       <p class="subtitle">IT Professional | .NET Developer | Automation & AI Enthusiast</p>
-      <nav>
-        <ul class="nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#resume">Resume</a></li>
-        </ul>
-      </nav>
+      <a href="#about" class="cta-button">Learn More</a>
     </div>
   </header>
 
@@ -42,12 +39,12 @@
     <div class="container">
       <h2>Core Skills</h2>
       <div class="skills-grid">
-        <div><strong>Programming:</strong> .NET, Angular, React, TypeScript, SQL Server</div>
-        <div><strong>Cloud:</strong> Azure Functions, Blob Storage, Cosmos DB</div>
-        <div><strong>Automation:</strong> Blue Prism, Power Automate, RPA</div>
-        <div><strong>AI/ML:</strong> Generative AI, Machine Learning, Resume Parsing</div>
-        <div><strong>Tools:</strong> Git, JIRA, CI/CD Pipelines</div>
-        <div><strong>BI:</strong> Power BI Dashboards, Data Analytics</div>
+        <div class="skill"><span>Programming</span><p>.NET, Angular, React, TypeScript</p></div>
+        <div class="skill"><span>Cloud</span><p>Azure Functions, Blob Storage, Cosmos DB</p></div>
+        <div class="skill"><span>Automation</span><p>Blue Prism, Power Automate, RPA</p></div>
+        <div class="skill"><span>AI/ML</span><p>Generative AI, Machine Learning</p></div>
+        <div class="skill"><span>Tools</span><p>Git, JIRA, CI/CD Pipelines</p></div>
+        <div class="skill"><span>BI</span><p>Power BI Dashboards</p></div>
       </div>
     </div>
   </section>
@@ -56,41 +53,25 @@
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>AI Functionality Suite</h3>
-        <p>Developed AI-powered tools for job-to-candidate matching, resume parsing, and automated resume generation.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>AI Functionality Suite</h3>
+          <p>Developed AI-powered tools for job-to-candidate matching, resume parsing, and automated resume generation.</p>
+        </div>
+        <div class="project-card">
+          <h3>Chatbot Development</h3>
+          <p>Deployed 15+ chatbots to streamline onboarding, compliance, and customer service, boosting user interaction by 30%.</p>
+        </div>
       </div>
-      <div class="project">
-        <h3>Chatbot Development</h3>
-        <p>Deployed 15+ chatbots to streamline onboarding, compliance, and customer service, boosting user interaction by 30%.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Download My Resume</h2>
-      <p>Click the button below to download a PDF version of my resume.</p>
-      <button onclick="window.location.href='resume.pdf'">Download Resume</button>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:aidanbro12@gmail.com">aidanbro12@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/aidan-broomfield-harris" target="_blank">linkedin.com/in/aidan-broomfield-harris</a></p>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section id="cta" class="cta">
-    <div class="container">
-      <h2>Let's Work Together!</h2>
-      <p>If you're looking for an experienced developer to bring your ideas to life, feel free to get in touch.</p>
-      <button onclick="window.location.href='mailto:aidanbro12@gmail.com'">Contact Me</button>
     </div>
   </section>
 
@@ -105,19 +86,13 @@
     </div>
   </footer>
 
-  <!-- Section Animation Script -->
+  <!-- Scripts -->
   <script>
-    const sections = document.querySelectorAll('.section');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
+    // Light/Dark Mode Toggle
+    const themeButton = document.getElementById('theme-btn');
+    themeButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
   </script>
 </body>
 </html>
