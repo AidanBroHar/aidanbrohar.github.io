@@ -1030,3 +1030,6 @@
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/obj/Debug/net8.0/refint/AidansPortfolio.dll
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/obj/Debug/net8.0/AidansPortfolio.pdb
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/obj/Debug/net8.0/ref/AidansPortfolio.dll
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Debug/net8.0/docs/web.config
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Debug/net8.0/docs/wwwroot/sample-data/weather.json
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Debug/net8.0/docs/wwwroot/_framework/blazor.boot.json
