@@ -1035,3 +1035,5 @@
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Release/net8.0/docs/wwwroot/_framework/blazor.boot.json
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Release/net8.0/docs/docs/wwwroot/sample-data/weather.json
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Release/net8.0/docs/docs/wwwroot/_framework/blazor.boot.json
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Release/net8.0/docs/docs/docs/wwwroot/sample-data/weather.json
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/bin/Release/net8.0/docs/docs/docs/wwwroot/_framework/blazor.boot.json

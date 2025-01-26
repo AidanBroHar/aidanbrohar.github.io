@@ -1,4 +1,6 @@
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/web.config
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/docs/docs/wwwroot/sample-data/weather.json
+/Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/docs/docs/wwwroot/_framework/blazor.boot.json
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/docs/wwwroot/sample-data/weather.json
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/docs/wwwroot/_framework/blazor.boot.json
 /Users/aidan/aidanbrohar.github.io/AidansPortfolio/docs/docs/wwwroot/sample-data/weather.json
