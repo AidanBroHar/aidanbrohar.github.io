@@ -1,13 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
+    <!-- Target .NET 8.0 Framework -->
     <TargetFramework>net8.0</TargetFramework>
+    
+    <!-- Enable nullable reference types for safer code -->
     <Nullable>enable</Nullable>
+    
+    <!-- Enable implicit global usings -->
     <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- Directory where the app will be published -->
+    <PublishDir>docs</PublishDir>
+    
+    <!-- Include repository URL when publishing -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Blazor WebAssembly runtime -->
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.3" />
+    
+    <!-- Development server for Blazor -->
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.3" PrivateAssets="all" />
   </ItemGroup>
 
