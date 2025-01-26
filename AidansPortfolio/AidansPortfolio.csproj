@@ -17,6 +17,11 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 
+  <!-- Add a .nojekyll file after publishing -->
+  <Target Name="AddNoJekyllFile" AfterTargets="Publish">
+    <WriteLinesToFile File="$(PublishDir).nojekyll" Lines="" Overwrite="true" />
+  </Target>
+
   <ItemGroup>
     <!-- Blazor WebAssembly runtime -->
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.3" />
