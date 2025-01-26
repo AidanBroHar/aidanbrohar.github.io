@@ -4,7 +4,7 @@ body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: #F7F8FA; /* Light mode background */
   color: #2C3E50; /* Light mode text */
-  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .dark-mode {
@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 300px;
   text-align: center;
 }
 
@@ -63,11 +63,6 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #2C3E50;
-}
-
-.dark-mode .section {
-  background-color: #2A2A3B;
-  color: #ECEFF4;
 }
 
 /* Skills and Projects Grids */
@@ -153,4 +148,79 @@ body {
 .theme-toggle button:hover {
   background-color: #50E3C2;
   color: #FFFFFF;
+}
+
+/* Navigation Bar */
+nav {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px; /* Spacing between navigation items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Text color */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px; /* Padding inside each link */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #50E3C2; /* Secondary color for hover */
+  color: #ffffff; /* Ensure text remains readable */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically on small screens */
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #4A90E2; /* Primary button color */
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+}
+
+#backToTop:hover {
+  background-color: #50E3C2; /* Secondary hover color */
+}
+
+#backToTop.show {
+  opacity: 1; /* Show the button */
+  visibility: visible;
 }

@@ -9,16 +9,21 @@
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <!-- Hero Section -->
   <header class="hero">
     <div class="container">
       <h1>Aidan Broomfield-Harris</h1>
       <p class="subtitle">IT Professional | .NET Developer | Automation & AI Enthusiast</p>
-      <a href="#about" class="cta-button">Learn More</a>
+      <a href="#about" class="cta-button">About Me</a>
+      <a href="#threedmodels" class="cta-button">Three.JS | Node.JS</a>
+      <a href="#dotnet" class="cta-button">.NET | C# | Blazor</a>
+      <a href="#azure" class="cta-button">Azure | Cloud | Infra</a>
+      <a href="#projects" class="cta-button">Further Projects</a>
+
     </div>
   </header>
 
-  <!-- About Section -->
+  <button id="backToTop" title="Go to top">↑</button>
+
   <section id="about" class="section">
     <div class="container">
       <h2>About Me</h2>
@@ -29,25 +34,26 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="threedmodels" class="section">
     <div class="container">
-      <h2>Core Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><span>Programming</span><p>.NET, Angular, React, TypeScript</p></div>
-        <div class="skill"><span>Cloud</span><p>Azure Functions, Blob Storage, Cosmos DB</p></div>
-        <div class="skill"><span>Automation</span><p>Blue Prism, Power Automate, RPA</p></div>
-        <div class="skill"><span>AI/ML</span><p>Generative AI, Machine Learning</p></div>
-        <div class="skill"><span>Tools</span><p>Git, JIRA, CI/CD Pipelines</p></div>
-        <div class="skill"><span>BI</span><p>Power BI Dashboards</p></div>
-      </div>
+      <h2>Three.JS | Node.JS</h2>
+  </section>
+
+  <section id="dotnet" class="section">
+    <div class="container">
+      <h2>.NET</h2>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <section id="azure" class="section">
+    <div class="container">
+      <h2>Azure</h2>
+      </div>
+  </section>
+
   <section id="projects" class="section">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Additional Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <h3>AI Functionality Suite</h3>
@@ -61,7 +67,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Me</h2>
@@ -69,7 +74,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Aidan Broomfield-Harris. All rights reserved.</p>
@@ -80,13 +84,28 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    // Light/Dark Mode Toggle
-    const themeButton = document.getElementById('theme-btn');
-    themeButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
+    // Get the button
+    const backToTopButton = document.getElementById('backToTop');
+  
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 299) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+  
+    // Scroll to top when the button is clicked
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   </script>
+  
+
 </body>
 </html>
